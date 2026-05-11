@@ -36,13 +36,18 @@ RUN pip install --no-cache-dir "git+https://github.com/facebookresearch/segment-
 
 WORKDIR /app
 
-# 5. إنشاء الهيكل الشجري لاستقبال النماذج الخارجية (Persistence Layer)
+# 5. إنشاء الهيكل الشجري لاستقبال النماذج الخارجية (Persistenc
+# 5. إنشاء الهيكل الشجري الكامل (المستودع الحالي + النماذج الهجينة الجديدة)
 RUN mkdir -p \
     models/_cache \
     models/swap \
     models/insightface/models/buffalo_l \
+    models/gfpgan \
+    models/codeformer \
     models/detection \
     models/segmentation \
+    models/enhancement \
+    models/recognition \
     models/pose \
     output
 
