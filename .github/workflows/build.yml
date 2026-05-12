@@ -1,4 +1,4 @@
-name: Build and Push Sultan AI
+name: Build and Push Sultan AI Power
 
 on:
   push:
@@ -25,4 +25,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: shababd11/face-swap-sultan:latest
+          # اسم واحد فقط كما طلبت
+          tags: shababd11/face-swap-sultan:power
